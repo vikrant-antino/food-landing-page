@@ -13,11 +13,34 @@ const Banner = () => {
            <Description>Download the bella onoje’s food app now on</Description>
            <PhoneImage1 src="/assets/images/Phone1.png"></PhoneImage1>
            <PhoneImage2 src="/assets/images/Phone2.png"></PhoneImage2>
+           <ButtonsWrapper>
+                <Button primary>Playstore</Button>
+                <Button>Appstore</Button>
+           </ButtonsWrapper>
         </div>
     );
 };
 
+const ButtonsWrapper = styled.div`
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding-left: 40%;
+  padding-top: 35%;
+  position: absolute;
+`;
+const Button = styled.button`
+  /* Adapt the colors based on primary prop */
+  background: ${props => props.primary ? "#FA4A0C" : "white"};
+  color: ${props => props.primary ? "white" : "#FA4A0C"};
 
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid #FA4A0C;
+  border-radius: 30px;
+  box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+`;
 const App = styled.h3`
     position: absolute;
     left: 44.08%;
