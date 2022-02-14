@@ -100,7 +100,7 @@ const P2 = styled.h2`
 
     /* text */
 
-    color: #252B42;
+    color: var(--text-color);
 
 
     /* Inside auto layout */
