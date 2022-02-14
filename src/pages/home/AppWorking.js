@@ -9,7 +9,7 @@ const AppWorking = () => {
             <Rectangle>
                 <img src="/assets/images/Rectangle.png" alt="Image" />
                 <div>
-                    <P1>Create an Account</P1>
+                    <P1>Create an Account..</P1>
                     <br />
                     <P2>Create/login to an existing account to get started</P2>
                     <br />
