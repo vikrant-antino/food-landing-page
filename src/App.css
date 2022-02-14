@@ -24,12 +24,12 @@ justify-content: space-between;
 .nav-title p{
   font-family: 'Montserrat', sans-serif; 
   font-size: 16px; 
-  color: #252B42; 
-  font-weight: 600; 
+  color: var(--secondary-color); 
+  font-weight:600; 
   min-width: 155px; 
   text-align: center;
 }  
 
- #home-title{
-   color:#FA4A0C;
- }
+.nav-title p:hover{
+  color:#FA4A0C;
+}
