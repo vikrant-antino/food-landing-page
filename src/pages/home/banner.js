@@ -22,45 +22,46 @@ const Banner = () => {
 };
 
 const ButtonsWrapper = styled.div`
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  padding-left: 40%;
-  padding-top: 35%;
-  position: absolute;
+display: flex;
+justify-items: center;
+align-items: center;
+padding-left: 40%;
+padding-top: 35%;
+position: absolute;
 `;
-const Button = styled.button`
-  /* Adapt the colors based on primary prop */
-  background: ${props => props.primary ? "#FA4A0C" : "white"};
-  color: ${props => props.primary ? "white" : "#FA4A0C"};
 
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid #FA4A0C;
-  border-radius: 30px;
-  box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+const Button = styled.button`
+/* Adapt the colors based on primary prop */
+background: ${props => props.primary ? "#FA4A0C" : "white"};
+color: ${props => props.primary ? "white" : "#FA4A0C"};
+
+font-size: 1em;
+margin: 1em;
+padding: 0.25em 1em;
+border: 2px solid #FA4A0C;
+border-radius: 30px;
+box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
 `;
 const App = styled.h3`
-    position: absolute;
-    left: 44.08%;
-    right: 44.08%;
-    top: 25%;
-    bottom: 88.96%;
+position: absolute;
+left: 44.08%;
+right: 44.08%;
+top: 25%;
+bottom: 88.96%;
 
-    /* H3 */
+/* H3 */
 
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 36px;
-    /* identical to box height, or 150% */
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height, or 150% */
 
-    text-align: center;
-    letter-spacing: 0.1px;
+text-align: center;
+letter-spacing: 0.1px;
 
-    color: #F7F7F7;
+color: #F7F7F7;
 
 `;
 
@@ -87,23 +88,23 @@ color: #F7F7F7;
 `;
 
 const Title = styled.h1`
-    position: absolute;
-    left: 22%;
-    right: 22%;
-    top: 30%;
-    bottom: 5.56%;
+position: absolute;
+left: 22%;
+right: 22%;
+top: 30%;
+bottom: 5.56%;
 
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 58px;
-    line-height: 80px;
-    /* or 138% */
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 58px;
+line-height: 80px;
+/* or 138% */
 
-    text-align: center;
-    letter-spacing: 0.2px;
+text-align: center;
+letter-spacing: 0.2px;
 
-    color: #FFFFFF;
+color: #FFFFFF;
 `;
 
 const PhoneImage1 = styled.img`
@@ -139,17 +140,6 @@ top: -1px;
 
 background: linear-gradient(0deg, rgba(23, 16, 16, 0.6), rgba(23, 16, 16, 0.6)), url(.jpg);
 `;
-
-const simpleButton = styled.button`
-position: absolute;
-width: 1440px;
-height: 619px;
-left: 0px;
-top: -1px;
-
-background: linear-gradient(0deg, rgba(23, 16, 16, 0.6), rgba(23, 16, 16, 0.6)), url(.jpg);
-`
-
 
 
 export default Banner;
