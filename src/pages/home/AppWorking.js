@@ -7,7 +7,7 @@ const AppWorking = () => {
         <div>
             <Heading>How the App Works</Heading>
             <Rectangle>
-                <img src="/assets/images/Rectangle.png" alt="phone-app-image" />
+                <img src="/assets/images/Rectangle.png" alt="phone-image" />
                 <div>
                     <P1>Create an Account..</P1>
                     <br />
