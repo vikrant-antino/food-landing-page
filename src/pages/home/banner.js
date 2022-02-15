@@ -32,9 +32,8 @@ position: absolute;
 
 const Button = styled.button`
 /* Adapt the colors based on primary prop */
-background: ${props => props.primary ? "#FA4A0C" : "white"};
-color: ${props => props.primary ? "white" : "#FA4A0C"};
-
+background: ${props => props.primary ? "var(--primary-color)" : "white"};
+color: ${props => props.primary ? "white" : "var(--primary-color)"};
 font-size: 1em;
 margin: 1em;
 padding: 0.25em 1em;
