@@ -43,15 +43,24 @@ const Content= styled.div`
     flex-direction: column;
     align-items: flex-start;
 
-    @media (max-width: 768px){
-        /* padding-right: 50px; */
-    }
-
     @media (max-width: 414px){
         text-align: center;
         /* margin-left: 200px; */
         padding: 0 30px;
+        margin-top: -100px;
     }
+
+    @media (min-width: 768px){
+        padding-right: 50px;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    @media (min-width: 1024px){
+        padding-top: 122px;
+        padding-right: 154px;
+    }
+
 `;
 
 const Heading = styled.h1`
@@ -98,7 +107,7 @@ const P1 = styled.h3`
     letter-spacing: 0.1px;
     color: #FA4A0C;
     
-    @media (max-width: 768px){
+    @media (min-width: 768px){
         margin-bottom: -40px;
     }
 
@@ -107,9 +116,8 @@ const P1 = styled.h3`
         padding-left: 110px;
         padding-right: 92px;
         padding-top: -154px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
-
 
     :hover{
         text-decoration: underline;
@@ -133,13 +141,19 @@ const P2 = styled.h2`
 
     color: #252B42;
 
-    @media (max-width: 768px){
+    @media (min-width: 768px){
         margin-bottom: -40px;
     }
 
     @media (max-width: 414px){
         text-align: center;
-        padding-bottom: 40px;
+        margin-top: -40px;
+        padding-bottom: 20px;
+    }
+
+    @media (min-width: 1024px){
+        padding-top: 17px;
+        padding-bottom: 17px;
     }
 
     :hover{
@@ -160,6 +174,7 @@ const P3 = styled.h4`
 
     @media (max-width: 414px){
         text-align: center;
+        margin-top: -40px;
     }
 
     :hover{
