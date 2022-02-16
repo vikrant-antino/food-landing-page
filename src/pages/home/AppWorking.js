@@ -89,7 +89,7 @@ const Heading = styled.h1`
     margin: auto;
 
     @media (max-width: 768px){
-        left: 540px;
+        left: 520px;
     }
 
 `;
