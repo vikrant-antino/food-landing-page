@@ -8,9 +8,9 @@ import Banner from "./pages/home/banner";
 function App() {
   return (
     <div className="App">
-    <Nav></Nav>
-      <Banner />
-      <AppWorking />
+      <Nav></Nav>
+      {/* <Banner /> */}
+     {/* <AppWorking /> */}
     </div>
   );
 }

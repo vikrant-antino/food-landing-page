@@ -130,14 +130,13 @@ background: url(.png);
 `;
 
 const BannerImage = styled.img`
-padding-top: 155px;
-position: absolute;
+
 width: 1540px;
 height: 619px;
 left: 0px;
 top: -1px;
 
-background: linear-gradient(0deg, rgba(23, 16, 16, 0.6), rgba(23, 16, 16, 0.6)), url(.jpg);
+
 `;
 
 

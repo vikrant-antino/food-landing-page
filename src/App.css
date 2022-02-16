@@ -1,36 +1,109 @@
- 
-.nav{
- display: flex; 
-justify-content: space-between;
- width: 93%; 
- margin:auto;
- align-items: center; 
- margin-right: 20px; 
- margin-top: 10px;
- 
-}  
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 93%;
+  margin: auto;
+  align-items: center;
 
-.nav img{
-  width:206px;
-  height :101.76px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.navleft {
+  display: flex;
+  align-items: center;
 }
 
-.nav-title{
-  display: flex;  
+.nav .logo {
+  width: 206px;
+  height: 101.76px;
+}
 
-}   
+.navleft ul {
+  display: flex;
+}
 
+a {
+  text-decoration: none;
+}
+.navleft li a {
+  color: #252b42;
+}
+.menuicon i {
+  cursor: pointer;
+  display: none;
+}
 
-.nav-title p{
-  font-family: 'Montserrat', sans-serif; 
-  font-size: 16px; 
-  color: #252B42; 
-  font-weight:600; 
-  min-width: 155px; 
+.navleft {
+  display: flex;
+  align-items: center;
+}
+
+.navleft ul li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #252b42;
+  font-weight: 600;
+  min-width: 115px;
   text-align: center;
-}  
-
-.nav-title p:hover{
-  color:#FA4A0C;
+  list-style: none;
 }
 
+li a:hover {
+  color: #fa4a0c;
+  transition: all 0.2s ease;
+}
+
+#click {
+  display: none;
+}
+
+.fa-solid {
+  color: #737373;
+}
+
+@media (max-width: 940px) {
+  .menuicon i {
+    display: block;
+    margin-left: 200px;
+    padding-right: 5px;
+  }
+
+  .navleft ul {
+    top: 70px;
+    left: -120%;
+    background-color: #737373;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: block;
+    padding: inherit;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+  }
+
+  #click:checked ~ .menuicon i:before {
+    content: "\f00d";
+  }
+
+  .nav .logo {
+    width: 104px;
+    height: 50px;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+  ul li {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  #click:checked ~ .navleft ul {
+    left: 0%;
+    transition: all 0.4s ease-in-out;
+  }
+
+  ul li a {
+    font-size: 21px;
+  }
+}
