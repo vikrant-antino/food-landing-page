@@ -30,7 +30,7 @@ const Pic = styled.img`
     /* background: url(.png); */
     filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
 
-    @media (max-width: 375px){
+    @media (max-width: 414px){
         position: absolute;
         width: 1050px;
         height: 1581px;
@@ -54,7 +54,7 @@ const Content= styled.div`
     left: 900px;
     top: 300px;
 
-    @media (max-width: 375px){
+    @media (max-width: 414px){
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -103,7 +103,7 @@ const Rectangle = styled.div`
 
     background: #FFFFFF;
 
-    @media (max-width: 375px){
+    @media (max-width: 414px){
         display: block;
     }
 
@@ -154,7 +154,7 @@ const P1 = styled.h3`
     flex-grow: 0;
     margin: 7px 0px;
 
-    @media (max-width: 375px){
+    @media (max-width: 414px){
         text-align: center;
     }
 
@@ -216,7 +216,7 @@ const P2 = styled.h2`
 
     /* padding-bottom: 3%; */
 
-    @media (max-width: 375px){
+    @media (max-width: 414px){
         text-align: center;
     }
 
@@ -280,7 +280,7 @@ const P3 = styled.h4`
 
     /* padding-bottom: 10%; */
 
-    @media (max-width: 375px){
+    @media (max-width: 414px){
         text-align: center;
     }
 
