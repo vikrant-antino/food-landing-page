@@ -22,6 +22,8 @@ const AppWorking = () => {
 
 const Pic = styled.img`
 
+    max-width: 100%;
+
     @media (max-width: 768px){
         width: 302px;
         height: 525px;
@@ -31,6 +33,7 @@ const Pic = styled.img`
         width: 650px;
         height: 781px;
         /* margin-left: 10px; */
+        padding-left: 50px;
     }
 
 `;
@@ -41,12 +44,13 @@ const Content= styled.div`
     align-items: flex-start;
 
     @media (max-width: 768px){
-        margin-left: -200px;
+        /* padding-right: 50px; */
     }
 
     @media (max-width: 414px){
         text-align: center;
-        margin-left: 100px;
+        /* margin-left: 200px; */
+        padding: 0 30px;
     }
 `;
 
@@ -64,7 +68,7 @@ const Heading = styled.h1`
    
 
     margin-top: 616px;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 
 `;
 
@@ -72,7 +76,8 @@ const Rectangle = styled.div`
 
     display: flex;  
     justify-content: center;
-    align-items: center;
+    /* flex-direction: column;
+    align-items: center; */
 
     background: #FFFFFF;
 
