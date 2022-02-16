@@ -1,15 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-// import rectangle from ''
 
 const AppWorking = () => {
     return (
         <div>
             <Heading>How the App Works</Heading>
             <Rectangle>
-                <img src="/assets/images/Rectangle.png" alt="Image" />
+                <img src="/assets/images/Rectangle.png" alt="phone-image" />
                 <div>
-                    <P1>Create an Account..</P1>
+                    <P1>Create an Account</P1>
                     <br />
                     <P2>Create/login to an existing account to get started</P2>
                     <br />
@@ -22,10 +21,10 @@ const AppWorking = () => {
 }
 
 const Heading = styled.h1`
-    position: absolute;
-    width: 425px;
+    position: relative;
+    width: 500px;
     height: 36px;
-    left: 495px;
+    /* left: 400px; */
     top: 1451px;
     font-style: normal;
     font-family: Poppins;
@@ -38,19 +37,28 @@ const Heading = styled.h1`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin: auto;
+
 `;
 
 const Rectangle = styled.div`
     position: absolute;
-    width: 1440px;
-    height: 806.99px;
+    width: 100vw;
+    height: 100vh;
     left: 0px;
     top: 1546px;
     background: #FFFFFF;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    padding-right: 5%;
+    padding-left: 5%;
+    padding-right: 10%;
+
+    @media (max-width: 768px){
+        display: block;
+    }
+
 `;
 
 const P1 = styled.h3`
@@ -78,6 +86,11 @@ const P1 = styled.h3`
     order: 0;
     flex-grow: 0;
     margin: 0px 0px;
+
+    :hover{
+        text-decoration: underline;
+    }
+
 `;
 
 const P2 = styled.h2`
@@ -109,6 +122,15 @@ const P2 = styled.h2`
     order: 0;
     flex-grow: 0;
     margin: 0px 10px;
+
+    img{
+        text-align: center;
+    }
+
+    :hover{
+        text-decoration: underline;
+    }
+
 `;
 
 const P3 = styled.h4`
@@ -140,6 +162,10 @@ const P3 = styled.h4`
     order: 0;
     flex-grow: 0;
     margin: 0px 10px;
+
+    :hover{
+        text-decoration: underline;
+    }
 `;
 
 export default AppWorking;
