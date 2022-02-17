@@ -184,7 +184,7 @@ const Heading = styled.h1`
 
     @media (min-width: 768px){
         /* flex-direction: column; */
-        margin-top: 1000px;
+        margin-top: 600px;
         /* display: block; */
     }
 
