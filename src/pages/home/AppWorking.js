@@ -5,6 +5,7 @@ const AppWorking = () => {
     return (
         <div>
             <Heading>How the App Works</Heading>
+            <RectContainer>
             <Rectangle>
                 <Pic src="/assets/images/Rectangle1.png" alt="phone-image"></Pic>
                 <Content>
@@ -16,7 +17,6 @@ const AppWorking = () => {
                 </Content>
             </Rectangle>
             <Rectangle2>
-                <Pic src="/assets/images/Rectangle2.png" alt="phone-image"></Pic>
                 <Content2>
                     <P1>Explore varieties</P1>
                     <br />
@@ -24,35 +24,53 @@ const AppWorking = () => {
                     <br />
                     <P3>Shop for your favorite meals or drinks and enjoy while doing it.</P3>
                 </Content2>
+                <Pic2 src="/assets/images/Rectangle2.png" alt="phone-image"></Pic2>
             </Rectangle2>
-             <Rectangle2>
+             <Rectangle3>
                 <Pic src="/assets/images/Rectangle3.png" alt="phone-image"></Pic>
-                <Content2>
+                <Content3>
                     <P1>Checkout</P1>
                     <br />
                     <P2>When you done check out and get it delivered.</P2>
                     <br />
                     <P3>When you done check out and get it delivered with ease.</P3>
-                </Content2>
-            </Rectangle2>
+                </Content3>
+            </Rectangle3>
+            </RectContainer>
         </div>
         
     )
 }
 
+const RectContainer = styled.div`
+    @media (min-width: 768px){
+        padding-left: 100px;
+    }
+`;
+
 const Pic = styled.img`
 
-    max-width: 100vw;
+    width: 100vw;
+    object-fit: cover;
 
-    @media (max-width: 768px){
-        width: 650px;
-        height: 581px;
+    @media (max-width: 414px){
+        padding-left: 40px;
+        margin-top: -150px;
+    }
+
+`;
+
+const Pic2 = styled.img`
+
+    width: 100vw;
+    object-fit: cover;
+
+     @media (min-width: 768px){
+        padding-left: 100px;
+        margin-top: -120px;
     }
 
     @media (max-width: 414px){
-        width: 650px;
-        height: 581px;
-        /* margin-left: 10px; */
         padding-left: 40px;
         margin-top: -150px;
     }
@@ -98,6 +116,43 @@ const Content2= styled.div`
         /* margin-top: -100px; */
     }
 
+     @media (min-width: 1024px){
+        padding-right: 50px;
+        /* margin-top: 80px; */
+        margin-bottom: 50px;
+        padding-left: 200px;
+        margin-left: 100px;
+    }
+
+    @media (min-width: 768px){
+        padding-right: 50px;
+        /* margin-top: 80px; */
+        margin-bottom: 50px;
+        padding-left: 200px;
+        margin-left: 90px;
+    }
+
+    @media (min-width: 1024px){
+        padding-top: 122px;
+        padding-right: 154px;
+        padding-left: 100px;
+    }
+
+`;
+
+const Content3 = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (max-width: 414px){
+        text-align: center;
+        /* margin-left: 200px; */
+        /* border-top: 1px solid grey; */
+        padding: 50px 30px;
+        /* margin-top: -100px; */
+    }
+
     @media (min-width: 768px){
         padding-right: 50px;
         margin-top: 80px;
@@ -107,6 +162,7 @@ const Content2= styled.div`
     @media (min-width: 1024px){
         padding-top: 122px;
         padding-right: 154px;
+        padding-left: 100px;
     }
 
 `;
@@ -126,6 +182,12 @@ const Heading = styled.h1`
 
     margin-top: 616px;
 
+    @media (min-width: 768px){
+        /* flex-direction: column; */
+        margin-top: 1000px;
+        /* display: block; */
+    }
+
     @media (max-width: 414px){
         margin-bottom: -70px;
     }
@@ -136,7 +198,7 @@ const Heading = styled.h1`
 const Rectangle = styled.div`
 
     display: flex;  
-    justify-content: center;
+    justify-content: space-around;
     /* flex-direction: column;
     align-items: center; */
 
@@ -153,11 +215,40 @@ const Rectangle = styled.div`
 const Rectangle2 = styled.div`
 
     display: flex;  
-    justify-content: center;
+    justify-content: space-around;
     /* flex-direction: column;
     align-items: center; */
 
     background: #FFFFFF;
+
+    @media (min-width: 1024px){
+        /* flex-direction: column; */
+        margin-top: -80px;
+        /* display: block; */
+    }
+
+    @media (max-width: 414px){
+        flex-direction: column;
+        margin-top: -120px;
+        /* display: block; */
+    }
+
+`;
+
+const Rectangle3 = styled.div`
+
+    display: flex;  
+    justify-content: space-around;
+    /* flex-direction: column;
+    align-items: center; */
+
+    background: #FFFFFF;
+
+    @media (min-width: 1024px){
+        /* flex-direction: column; */
+        margin-top: -80px;
+        /* display: block; */
+    }
 
     @media (max-width: 414px){
         flex-direction: column-reverse;
