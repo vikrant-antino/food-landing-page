@@ -4,7 +4,8 @@ import styled from 'styled-components';
 
 const Banner = () => {
     return(
-        <div className="banner">
+        <div className="banner"> 
+        <main>
             <ButtonsWrapper>
                 <Button primary>Playstore</Button>
                 <Button>Appstore</Button>
@@ -20,7 +21,8 @@ const Banner = () => {
            </ImageContainer1> 
            {/* <ImageContainer2>
            <PhoneImage2 src="/assets/images/Phone2.png"></PhoneImage2>
-           </ImageContainer2> */}
+           </ImageContainer2> */} 
+           </main>
         </div>
     );
 };

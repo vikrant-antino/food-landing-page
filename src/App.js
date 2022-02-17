@@ -4,13 +4,15 @@ import './App.css';
 import AppWorking from './pages/home/AppWorking';
 import React from "react";
 import Banner from "./pages/home/banner";
+import DownloadInfo from "./pages/home/DownloadInfo";
 
 function App() {
   return (
     <div className="App">
       <Nav></Nav>
-      {/* <Banner /> */}
-     {/* <AppWorking /> */}
+      <Banner /> 
+     <AppWorking /> 
+     <DownloadInfo></DownloadInfo>
     </div>
   );
 }
