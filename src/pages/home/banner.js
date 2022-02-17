@@ -173,7 +173,7 @@ const PhoneImage1 = styled.img`
 width: 786px;
 padding-top: 0%;
 padding-left: 30%;
-right: 0%
+right: 0% ;
 top: 0%;
 width: 470px;
 height: 800px;
@@ -209,7 +209,7 @@ top: -1px;
 @media (max-width: 768px){
     width: 786px;
     left: 0%;
-    right: 0%
+    right: 0%;
     top: 0%;
 }
 // background: linear-gradient(0deg, rgba(23, 16, 16, 0.6), rgba(23, 16, 16, 0.6)), url(.jpg);

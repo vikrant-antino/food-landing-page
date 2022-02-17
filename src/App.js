@@ -13,6 +13,8 @@ function App() {
       <Banner /> 
      <AppWorking /> 
      <DownloadInfo></DownloadInfo>
+      <Banner />
+      <AppWorking />
     </div>
   );
 }
